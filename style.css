@@ -1,0 +1,126 @@
+body {
+    background-image: url("https://media.istockphoto.com/photos/delicious-meal-picture-id1295387240?b=1&k=20&m=1295387240&s=170667a&w=0&h=KtWYFjSBgpNgVkE3P-WKZ2F6V-VxyUBBtJIP_k8IANM=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(211, 201, 187, 0.9);
+    }
+    #container {
+    background-color:rgba(247, 193, 113, 0.9);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 725px;
+    border-radius: 40px;
+    color: white;
+    }
+    form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    }
+    h1{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(252, 252, 252);
+    align-self: center;
+    }
+    input{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    }
+    #addTip {
+    background-color:#34e67b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    #btn {
+    background-color: #f0e98a;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    #tip{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    }
+    #showTotalAmountToPay{
+    display: flex;
+    }
+    #billSplit, #totalTip, #totalAmount {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(64, 168, 52, 0.9);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    }
+    @media all and (max-width: 800px){
+    h1{
+    text-align: center;
+    font-size: 30px;
+    } 
+    #container {    
+    max-width: 530px;
+    margin: 0 auto;
+    height: 925px;
+    }
+    #showTotalAmountToPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #billSplit, #totalTip, #totalAmount {
+    width: 40%;
+    }
+    }
+    @media all and (max-width: 500px){
+    h1{
+    text-align: center;
+    font-size: 25px;
+    }
+    p{
+    text-align: center;
+    }
+    #container {
+    max-width: 300px;
+    margin: 0 auto;
+    height: 1025px;
+    }
+    #showTotalAmountToPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #billSplit, #totalTip, #totalAmount {
+    width: 40%;
+    }
+    }
+    @media all and (max-width: 300px){
+    h1{
+    text-align: center;
+    font-size: 15px;
+    }
+    p{
+      text-align: center;
+      }
+    #container {
+    max-width: 245px;
+    margin: 0 auto;
+    height: 1090px;
+    }
+    #showTotalAmountToPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #billSplit, #totalTip, #totalAmount {
+    width: 40%;
+    }
+    }

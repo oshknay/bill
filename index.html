@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Давай разделим счет!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div id="container">
+
+<h1>Давай разделим счет!!!</h1>
+
+<form >
+
+<p>Счет </p>
+ <input type="text" id="bill" placeholder="Счет">
+
+<p> Количество людей</p>
+<span > <input type="text" id="people" placeholder="Сколько человек?"></span>
+
+ <p>Вам понравилось обслуживание?</p>
+
+
+ <button id="addTip">Добавить чаевые</button>
+
+ <select  id="tip">
+
+<option disabled> Выберите </option>
+<option value="0.30" > Супер! 30% </option>
+<option value="0.20"> Отличное обслуживание! 20% </option>
+<option value="0.10"> Все понравилось! 10%🙂</option>
+<option value="0.0" selected> Не оставлять чаевых 😒</option>
+ </select>
+
+<button id="btn">Посчитать</button>
+
+</form>
+
+
+<div id="showTotalAmountToPay">
+
+<div id="billSplit">
+    <p>Счет</p>
+    <span id="dividedBill"></span>
+    <span>руб.</span>
+    <span> на человека</span>
+
+</div>
+
+
+<div id="totalTip">
+    <p>Чаевые</p>
+    <span id="dividedTip"></span>
+    <span>руб.</span>
+    <span> на человека</span>
+
+</div>
+
+<div id="totalAmount">
+    <p>Всего </p>
+    <span id="billAndTip"></span>
+    <span>руб.</span>
+    <span> на человека</span>
+
+</div>
+
+</div>
+
+ </div>
+    
+    
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="script.js"></script>
+ </body>
+ </html>
